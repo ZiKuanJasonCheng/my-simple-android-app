@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@color/activityBackground">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="641dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/activityToolBarBackground">
+
+                <ImageView
+                    android:id="@+id/imgAppIcon"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_green_light" />
+
+                <TextView
+                    android:text="@string/configuration_title"
+                    android:layout_height="match_parent"
+                    android:id="@+id/txtConfigurationTitle"
+                    android:layout_width="300dp"
+                    android:textSize="24sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="60dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:layout_weight="0.02"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:weightSum="1"
+                    android:layout_height="175dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"></LinearLayout>
+
+                    <TextView
+                        android:text="@string/configuration_user_input"
+                        android:layout_width="match_parent"
+                        android:id="@+id/txtUserInputOption"
+                        android:elevation="9dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.29"
+                        android:textSize="20sp"
+                        android:textColor="@color/fontColor" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.01">
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:id="@+id/cbNotificationStatusBar"
+                            android:layout_height="35dp"
+                            android:clickable="false"
+                            android:checked="true"
+                            android:textColor="@color/fontColor" />
+
+                        <TextView
+                            android:text="@string/checkbox_notification_bar"
+                            android:layout_height="35dp"
+                            android:id="@+id/txtNotificationBar"
+                            android:textColor="@color/fontColor"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentStart="true"
+                            android:textSize="16sp"
+                            android:layout_width="200dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.06">
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:id="@+id/cbAutoPopup"
+                            android:layout_height="35dp"
+                            android:checked="true"
+                            android:textColor="@color/fontColor"
+                            android:clickable="false"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentStart="true" />
+
+                        <TextView
+                            android:text="@string/checkbox_auto_popup"
+                            android:layout_width="100dp"
+                            android:layout_height="35dp"
+                            android:id="@+id/txtAutoPopup"
+                            android:layout_alignParentTop="true"
+                            android:layout_toEndOf="@+id/cbAutoPopup"
+                            android:layout_alignBottom="@+id/cbAutoPopup"
+                            android:textColor="@color/fontColor"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:text="@string/checkbox_floating_icon"
+                        android:layout_width="match_parent"
+                        android:id="@+id/cbFloatingIcon"
+                        android:layout_height="35dp"
+                        android:checked="true"
+                        android:textColor="@color/fontColor" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:text="@string/configuration_set_price_drop_percentage"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:id="@+id/txtTrackOption"
+                        android:elevation="2dp"
+                        android:textSize="20sp"
+                        android:layout_weight="0.07"
+                        android:textColor="@color/fontColor" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1">
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_weight="0.37"
+                            android:id="@+id/rgPercentage">
+
+                            <RadioButton
+                                android:text="5%"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/rbFive"
+                                android:layout_weight="1"
+                                android:layout_marginRight="5dp"
+                                android:checked="true"
+                                android:textColor="@color/fontColor" />
+
+                            <RadioButton
+                                android:text="10%"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/rbTen"
+                                android:layout_weight="1"
+                                android:layout_marginRight="5dp"
+                                android:textColor="@color/fontColor" />
+
+                            <RadioButton
+                                android:text="20%"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/rbTwenty"
+                                android:layout_weight="1"
+                                android:layout_marginRight="5dp"
+                                android:textColor="@color/fontColor" />
+
+                            <RadioButton
+                                android:text="30%"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/rbThirty"
+                                android:layout_weight="1"
+                                android:layout_marginRight="5dp"
+                                android:textColor="@color/fontColor" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:weightSum="1"
+                    android:layout_height="210dp">
+
+                    <TextView
+                        android:text="@string/configuration_price_report"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:id="@+id/txtResultOption"
+                        android:layout_weight="0.24"
+                        android:textSize="20sp"
+                        android:elevation="9dp"
+                        android:textColor="@color/fontColor" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.24">
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:id="@+id/cbApp"
+                            android:layout_height="35dp"
+                            android:checked="true"
+                            android:clickable="false"
+                            android:textColor="@color/fontColor"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:text="@string/checkbox_app_main_menu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txtApp"
+                            android:layout_weight="1"
+                            android:textColor="@color/fontColor"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.24">
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:id="@+id/cbBar"
+                            android:textColor="@color/fontColor"
+                            android:clickable="false"
+                            android:checked="true"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:text="@string/checkbox_notification_price_drop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txtBar"
+                            android:layout_weight="1"
+                            android:textColor="@color/fontColor"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:id="@+id/cbEmail"
+                        android:layout_weight="0.24"
+                        android:textColor="@color/fontColor"
+                        android:checked="true"
+                        android:text="@string/checkbox_send_email" />
+
+                    <EditText
+                        android:inputType="textEmailAddress"
+                        android:ems="10"
+                        android:id="@+id/edtMail"
+                        android:hint="Enter your E-mail address..."
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="273dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_height="40dp"
+                        android:textColor="@color/fontColor" />
+
+                    <TextView
+                        android:text="@string/email_error_message"
+                        android:layout_width="293dp"
+                        android:id="@+id/txtFalseMail"
+                        android:layout_height="25dp"
+                        android:textColor="@color/fontColor"
+                        android:layout_marginLeft="15dp"
+                        android:visibility="invisible" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="82dp"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="71dp">
+
+                        <Button
+                            android:text="@string/activity_ok"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btnConfigOK"
+                            android:layout_weight="0.13"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/fontColor" />
+
+                        <Button
+                            android:text="@string/activity_cancel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btnConfigCancel"
+                            android:layout_weight="0.10"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@color/fontColor" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

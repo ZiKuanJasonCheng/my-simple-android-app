@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:theme="@style/AppTheme" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="241dp"
+        android:layout_weight="0.13"
+        android:weightSum="1"
+        android:background="@color/skin"
+        android:id="@+id/floatingWindowView"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="19dp"
+            android:id="@+id/rlTitle"
+            android:layout_weight="0.06">
+
+            <TextView
+                android:text="@string/floating_window_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtFloatingWindowTitle"
+                android:layout_toLeftOf="@+id/imgClose"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textAlignment="center"
+                android:background="@color/colorPrimary"
+                android:layout_alignTop="@+id/imgClose"
+                android:textColor="@android:color/background_light" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/imgClose"
+                android:background="@drawable/close"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_weight="0.65"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/floating_window_label_item"
+                android:layout_width="match_parent"
+                android:id="@+id/txtItemName"
+                android:textAlignment="textStart"
+                android:textColor="@color/floatingWindowFontColor"
+                android:layout_weight="1.50"
+                android:textSize="14dp"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:text="@string/floating_window_label_current_price"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:id="@+id/txtCurrentPrice"
+                android:textColor="@color/floatingWindowFontColor"
+                android:layout_weight="0.14"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_weight="0.30"
+            android:layout_height="35dp">
+
+            <TextView
+                android:text="@string/floating_window_label_target_price"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/txtTargetPrice"
+                android:layout_weight="0.43"
+                android:textColor="@color/floatingWindowFontColor" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/edtTargetPrice"
+
+                android:textColor="@color/floatingWindowFontColor"
+                android:linksClickable="true"
+                android:longClickable="true"
+                android:textSize="10sp"
+                android:layout_height="match_parent"
+                android:hint="Please enter a target price" />
+
+            <Button
+                android:text="@string/floating_window_button_OK"
+                android:layout_height="match_parent"
+                android:id="@+id/btnOK"
+                android:layout_weight="0.49"
+                android:textColor="@color/floatingWindowFontColor"
+                android:layout_width="25dp"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <!--android:orientation="horizontal"-->
+
+    </LinearLayout>
+
+</LinearLayout>

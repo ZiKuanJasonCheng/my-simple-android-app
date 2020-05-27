@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">SimpleApp</string>
+    <string name="floating_window_title">SimpleApp</string>
+    <string name="floating_window_hint_for_entering_item">Please copy/paste or enter the product: </string>
+    <string name="floating_window_label_item">Item : </string>
+    <string name="floating_window_label_current_price">Current price: $</string>
+    <string name="floating_window_label_target_price">Target price: $</string>
+    <string name="floating_window_button_OK">OK</string>
+    <string name="activity_configuration">CONFIGURATION</string>
+    <string name="activity_price_reports">PRICE REPORT</string>
+    <string name="activity_compare_price">COMPARE PRICE</string>
+    <string name="activity_license">LICENSE</string>
+    <string name="price_report_delete">DELETE</string>
+    <string name="activity_ok">OK</string>
+    <string name="activity_cancel">CANCEL</string>
+    <string name="license_info_title">License Agreement</string>
+    <string name="label_license_info">License label\n
+    Label content
+    </string>
+    <string name="configuration_title">Price Options</string>
+    <string name="configuration_user_input">User Input</string>
+    <string name="configuration_set_price_drop_percentage">Set Price Drop Percentage</string>
+    <string name="configuration_price_report">Price Report</string>
+    <string name="checkbox_notification_bar">Notification Bar</string>
+    <string name="checkbox_auto_popup">Auto Popup</string>
+    <string name="checkbox_price_report">Price Report</string>
+    <string name="checkbox_notification_price_drop">Notification for Price Drop</string>
+    <string name="checkbox_floating_icon">Floating Icon</string>
+    <string name="checkbox_send_email">Email for Price Report</string>
+    <string name="checkbox_app_main_menu">App Main Menu for Price Report</string>
+    <string name="email_error_message">Please enter a valid email address.</string>
+
+</resources>

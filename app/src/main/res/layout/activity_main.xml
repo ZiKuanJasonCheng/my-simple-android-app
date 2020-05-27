@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/activityBackground"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/activityToolBarBackground">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgAppIcon"
+            android:background="@drawable/alvose_green" />
+
+        <TextView
+            android:id="@+id/txtMainTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="60dp"
+            android:background="@color/activityToolBarBackground"
+            android:text="Main Page"
+            android:textSize="24dp" />
+    </RelativeLayout>
+
+    <Button
+        android:text="@string/activity_configuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnConfiguration"
+        android:layout_marginTop="76dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="@string/activity_compare_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnComparePrice"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/btnConfiguration"
+        android:layout_alignEnd="@+id/btnConfiguration" />
+
+    <Button
+        android:text="start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="77dp"
+        android:id="@+id/btnStartMainService"
+        android:layout_below="@+id/btnShowResult"
+        android:layout_alignStart="@+id/btnShowResult"
+        android:layout_alignEnd="@+id/btnShowResult" />
+
+    <Button
+        android:text="stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:id="@+id/btnStopMainService"
+        android:layout_below="@+id/btnStartMainService"
+        android:layout_alignStart="@+id/btnStartMainService"
+        android:layout_alignEnd="@+id/btnStartMainService" />
+
+    <Button
+        android:text="accessibility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAccess"
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/btnStopMainService"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="@string/activity_license"
+        android:layout_width="wrap_content"
+        android:id="@+id/btnLicense"
+        android:layout_marginBottom="14dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="30dp"
+        android:textSize="10dp" />
+
+    <Button
+        android:text="@string/activity_price_reports"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnShowResult"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/btnComparePrice"
+        android:layout_alignStart="@+id/btnComparePrice"
+        android:layout_alignEnd="@+id/btnComparePrice" />
+
+
+</RelativeLayout>

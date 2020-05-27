@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="activityBackground">#a2e5f5</color>
+    <color name="activityToolBarBackground">#dfcc76</color>
+    <color name="floatingWindowBackground">#f4cfb4</color>
+    <color name="floatingWindowFontColor">#000000</color>
+    <color name="fontColor">#000000</color>
+    <color name="floatingWindowTitleBarColor">#FF3F51B5</color>
+    <color name="licenseAgreementBackground">#FFFFFFFF</color>
+</resources>
